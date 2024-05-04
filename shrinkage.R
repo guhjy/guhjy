@@ -28,14 +28,7 @@ shrinkage_estimator <- function(b, s) {
   )
 }
 
-# Example usage:
-result <- shrinkage_estimator(b = 0.4, s = 0.3)
-
-# Using cat to display results with captions
-cat("Shrinkage estimator (Beta-hat):", result$betahat, "\n")
-cat("Standard deviation of the estimator (Sigma-hat):", result$sigma_hat, "\n")
-cat("95% Confidence Interval: [", result$confidence_interval[1], ", ", result$confidence_interval[2], "]\n")
-
-# If you also want to print the mixture details in a formatted way, you can iterate through the dataframe
-cat("\nMixture Details (probabilities, conditional means, conditional variances):\n")
-print(result$mixture_details)
+# Example usage: result <- shrinkage_estimator(b = 0.4, s = 0.3)
+# cat("Shrinkage estimator (Beta-hat):", result$betahat, "\n")
+# cat("Standard deviation of the estimator (Sigma-hat):", result$sigma_hat, "\n")
+# cat("95% Confidence Interval: [", result$confidence_interval[1], ", ", result$confidence_interval[2], "]\
